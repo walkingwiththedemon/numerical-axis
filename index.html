@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Numerical axis</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div id="root">
+        <div class="page">
+            <div class="page__wrapper">
+                <div class="page__axis">
+                    <div class="axis">
+                        <div class="axis__header">
+                            <span class="input input--readonly" id="js-first-item-container"></span>
+                            <span>+</span>
+                            <span class="input input--readonly" id="js-second-item-container"></span>
+                            <span>=</span>
+                            <input class="input input--readonly" type="text" readonly value="?" id="js-sum-container" minlength="2" maxlength="2">
+                        </div>
+                        <input type="text" class="input axis__input" minlength="1" maxlength="1" id="js-first-input" data-target="js-first-item-container">
+                        <input type="text" class="input axis__input" minlength="1" maxlength="1" id="js-second-input" style="display: none;" data-target="js-second-item-container">
+                        <canvas class="axis__canvas axis__canvas--image" id="js-canvas-image"></canvas>
+                        <canvas class="axis__canvas axis__canvas--arc" id="js-canvas-arc"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
